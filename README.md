@@ -9,13 +9,13 @@ An app for managing the lending of books from an online book library.
 Clone this repository into whatever directory you want to work from.
 
 ```bash
-$ git clone https://github.com/codefellows/django_lender_401d7.git
+$ git clone https://github.com/codefellows/django-lender-401d7.git
 ```
 
 Assuming that you have access to Python 3 at the system level, start up a new virtual environment.
 
 ```bash
-$ cd django_lender_401d7
+$ cd django-lender-401d7
 $ python3 -m venv ENV
 $ source ENV/bin/activate
 ```
