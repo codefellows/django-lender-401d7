@@ -11,10 +11,7 @@ before_script:
 
 #set some environment variables
 env:
-  - DB_NAME=django_lender
-  - DB_USER=postgres
-  - DB_HOST='127.0.0.1'
-  - SECRET_KEY='potato'
+  - DB_NAME=django_lender DB_USER=postgres DB_HOST='127.0.0.1' SECRET_KEY='potato'
 
 # command to install dependencies
 install:
