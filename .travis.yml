@@ -21,7 +21,7 @@ install:
 # commands to run tests 
 script: 
   - python lending_library/manage.py migrate
-  - coverage run lending_library/manage.py test
+  - coverage run lending_library/manage.py test lending_library
 
 after_success:
   - coveralls
