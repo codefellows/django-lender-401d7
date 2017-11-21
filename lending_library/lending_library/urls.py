@@ -13,9 +13,13 @@ Including another URLconf
     1. Import the include() function: from django.conf.urls import url, include
     2. Add a URL to urlpatterns:  url(r'^blog/', include('blog.urls'))
 """
-from django.conf.urls import url
+from django.conf.urls import url#, reverse <--- give it a url name and it'll print out the route
 from django.contrib import admin
+from lending_library.views import home_view, potato_view
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
+    url(r'^$', home_view, name='home'),
+    url(r'^(?P<number>\d+)/$', home_view, name='variable'),
+    url(r'^potato$', potato_view, name="potato")
 ]
