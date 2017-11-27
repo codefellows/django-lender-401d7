@@ -102,3 +102,7 @@ venv.bak/
 
 # mypy
 .mypy_cache/
+
+# Ignore all the media files except the .gitkeep file
+lending_library/MEDIA/*
+!lending_library/MEDIA/.gitkeep  # don't ignore this file!!!!
