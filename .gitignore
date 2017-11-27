@@ -105,4 +105,4 @@ venv.bak/
 
 # Ignore all the media files except the .gitkeep file
 lending_library/MEDIA/*
-!lending_library/MEDIA/.gitkeep  # don't ignore this file!!!!
+!lending_library/MEDIA/.gitkeep
