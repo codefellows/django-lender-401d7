@@ -1,5 +1,9 @@
 {% extends "lending_library/layout.html" %}
 {% block tugboat %}
     <h1>You are in the lending_library directory</h1>
-    <p>This is number {{ potato }}
+    <p>This is number {{ potato }}</p>
+    {% for book in objects %}
+    <p>{{ book.title }}</p>
+    {% endfor %}
+    {{ name }}
 {% endblock %}
