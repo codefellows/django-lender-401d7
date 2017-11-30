@@ -6,6 +6,7 @@ class Book(models.Model):
     cover_image = models.ImageField(upload_to='images')
     title = models.CharField(max_length=255)
     author = models.CharField(max_length=255)
+    slug = models.SlugField(null=True)
 
     YEARS = [(year, year)
          for year in range(1, datetime.datetime.now().year + 1)][::-1]

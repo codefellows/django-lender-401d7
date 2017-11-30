@@ -1,8 +1,14 @@
 from django.shortcuts import render
-from django.views.generic import CreateView
+from django.views.generic import CreateView, DetailView
 from lender_books.models import Book
 
 # Create your views here.
+
+
+class OneBook(DetailView):
+    model = Book
+    template_name = 'lender_books/book_detail.html'
+    context_object_name = 'book'  # <--- set this class attribute if you want a specific name in your template that is not "object"
 
 
 class NewBookView(CreateView):
